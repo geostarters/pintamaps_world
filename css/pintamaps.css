@@ -1,0 +1,640 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#map {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.colorpicker-2x{
+	float: right;
+}
+
+.control-zoom {
+	float: left;
+}
+
+.SearchWorld{
+	width: 100%;
+	font-size: 14px;
+}
+
+.ui-autocomplete {
+	max-height: 100px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+}
+
+i {
+	border: 1px dotted #ccc;
+}
+#llegenda {
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	bottom: 10px;
+	left: 10px;
+	max-height: 95%;
+	opacity: 0.83;
+	overflow: auto;
+	padding: 10px;
+	position: absolute;
+	top: 10px;
+	width: 236px;
+	z-index: 100;
+}
+
+
+#div_estils_pre{
+	bottom: 25px;
+    font-size: 13px;
+    opacity: 0.83;
+    overflow: auto;
+    padding: 5px 10px 1px;
+    position: absolute;
+    right: 10px;
+    z-index: 100;
+}
+
+
+.select2-selection__placeholder{
+	font-size: 14px;
+}
+
+#menu {
+	background-color: #f2f2f2;
+	height: 300px;
+	left: 300px;
+	max-height: 95%;
+	opacity: 0.85;
+	overflow: auto;
+	padding: 10px;
+	position: absolute;
+	top: 150px;
+	width: 400px;
+	z-index: 100;
+	display:none;
+}
+
+.btn-group div{
+
+	font-weight: bold;
+
+}
+
+
+.btn-group span{
+
+	font-size: 14px;
+	font-weight: normal;
+
+}
+.btn-group input{
+
+	font-weight: normal;
+
+}
+
+#div_topo{
+	border: 1px solid #c2c2c2;
+	border-radius: 5px;
+	height: 31px;
+	line-height: 30px;
+	margin-top: 9px;
+	padding-left: 2px;
+	padding-right: 15px;
+	width: 99%;
+}
+
+#barraEines{
+	position: absolute;
+	right: 10px;
+	top: 142px;
+	width: 30px;
+	z-index: 100;
+}
+
+#barraCerca{
+	font-size: 10px !important;
+	opacity: 0.8;
+	overflow: visible;
+	position: absolute;
+	right: 40%;
+	top: 13px;
+	width: 350px;
+	z-index: 100;
+}
+
+#social{
+position: absolute;
+	right: 8%;
+	top: 10px;
+	width: auto;
+	z-index: 100;
+
+
+}
+
+@media (max-width: 800px){
+
+	#barraCerca{
+
+	font-size: 9px !important;
+	opacity: 0.8;
+	overflow: visible;
+	position: absolute;
+	right: 20%;
+	top: 13px;
+	width: auto;
+	z-index: 100;
+	display:block;
+	}
+
+	.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 158px !important;
+}
+
+
+#social{
+
+
+position: absolute;
+	right: 8%;
+	top: 10px;
+	width: auto;
+	z-index: 100;
+
+
+}
+
+}
+
+
+@media  (max-width: 500px){
+
+	#barraCerca{
+		font-size: 70% !important;
+		opacity: 0.8;
+		overflow: visible;
+		position: absolute;
+		right: 10%;
+		top: 13px;
+		width: auto;
+		z-index: 100;
+		display:none;
+	}
+
+	#social{
+
+
+position: absolute;
+	right: 20%;
+	top: 10px;
+	width: auto;
+	z-index: 100;
+
+
+}
+
+	#llegenda {
+		background-color: #f2f2f2;
+		border-radius: 4px;
+		bottom: 10px;
+		font-size: 66%;
+		left: 10px;
+		max-height: 95%;
+		opacity: 0.83;
+		overflow: auto;
+		padding: 10px;
+		position: absolute;
+		top: 10px;
+		width: 20%;
+		z-index: 100;
+	}
+
+
+	#div_estils_pre {
+    bottom: 20%;
+    font-size: 40%;
+    opacity: 0.83;
+    overflow: auto;
+    padding: 5px 10px 1px;
+    position: absolute;
+    right: 10px;
+    z-index: 100;
+}
+
+
+	.mapboxgl-ctrl-attrib a {
+    color: #1f436b !important;
+    font-size: 40% !important;
+    text-decoration: underline !important;
+}
+
+
+}
+
+
+
+.bq_fons {
+	background-color: #E7E7CB;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+.bq_land {
+	background-color: #A09D94;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+.bq_countries1 {
+	background-color: #A09D94;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+
+.bq_countries2 {
+	background-color: #DBBC76;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+.bq_regions {
+	background-color: #BEC3B1;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+.bq_areesurbanes {
+	background-color: #C9C9C9;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+.bq_populatedp {
+	background-color: #FDEAB2;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+.bq_roads {
+	background-color: #467DFF;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+.bq_railroads {
+	background-color: #467DFF;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+.bq_rivers {
+	background-color: #000000;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+.bq_lakes {
+	background-color: #CCA1C1;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+.bq_glaciated {
+	background-color: #FFFFFF;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+.bq_toponimia {
+	background-color: #FFFFFF;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}
+
+/*.bq_sobrant {
+	background-color: #FFFFFF;
+	float: right;
+	height: 15px;
+	margin-top: 0px;
+	width: 15px;
+}*/
+
+.colorpicker-2x .colorpicker-saturation {
+	width: 150px;
+	height: 150px;
+}
+
+.colorpicker-2x .colorpicker-hue, .colorpicker-2x .colorpicker-alpha {
+	width: 20px;
+	height: 150px;
+}
+
+.colorpicker-2x .colorpicker-color, .colorpicker-2x .colorpicker-color div
+{
+	height: 20px;
+}
+
+.form-control {
+	font-size: 13px !important;
+	height: 30px !important;
+	margin-bottom: 0 !important;
+}
+
+#llegenda{
+	-webkit-box-shadow: 0 5px 4px 0 #3B3B3B;
+	-moz-box-shadow: 0 1px 4px 0 #3B3B3B;
+	box-shadow: 0 1px 4px 0 #000000;
+
+}
+
+#logos {
+	bottom: 35px;
+	cursor: pointer;
+	height: 46px;
+	opacity: 0.8;
+	padding: 0 10px;
+	position: absolute;
+	left: 245px;
+	z-index: 1000;
+}
+#logos.logos {
+	left: 270px;
+}
+
+.centrat{
+	text-align: center;
+	margin: 20px;
+}
+.verd{
+	color: #087719;
+	font-size: 28px;
+
+}
+
+.titol{
+
+	float:left;
+	margin-bottom: 2px;
+
+
+}
+
+#div_upload_estil{
+
+	border: 2px dashed #cccccc;
+	color: #ccc;
+	height: 100px;
+
+	margin-top: 5px;
+	padding-top: inherit;
+	text-align: center;
+}
+
+.modal-header {
+	padding: 9px !important;
+}
+
+.dz-preview{
+	display:none !important;
+}
+
+
+
+#error-message {
+	display: none;
+}
+
+.map-container {
+	overflow-x: auto;
+}
+
+
+
+.mb-attribution {
+	position: absolute;
+	z-index: 999;
+	left: 5px;
+	bottom: 5px;
+}
+
+.mapboxgl-canvas{
+	background-color: rgba(255, 255, 255, 1);
+}
+
+/*
+* Hide high-res map rendering
+*/
+.hidden-map {
+	overflow: hidden;
+	height: 0;
+	width: 0;
+	position: fixed;
+}
+
+#ul_fonsmap a{
+	font-weight: bold !important;
+}
+
+/*
+* Loading spinner
+* Based on http://codepen.io/lixquid/pen/ybjmr
+*/
+#spinner {
+	width: 24px;
+	height: 24px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #333;
+	border-left: 2px solid #333;
+	-webkit-animation: spinner 0.75s ease infinite;
+	animation: spinner 0.75s ease infinite;
+	border-radius: 100%;
+	position: relative;
+	top: 8px;
+	margin-left: 10px;
+	display: none;
+}
+@-webkit-keyframes spinner {
+	to {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+}
+@keyframes spinner {
+	to {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+}
+
+.extraBT{
+	width:100%;
+}
+
+.extraBT2{
+	background-color: #f0f0f0;
+	border: 0 solid #ccc !important;
+	color: #333;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	font-weight: bold !important;
+	line-height: 1.42857;
+}
+
+
+
+.extraBT3{
+	background-color: #FFFFFF;
+	border: 0 solid #ccc !important;
+	color: #333;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	font-weight: bold !important;
+	line-height: 1.42857;
+}
+
+
+
+#t_fons {
+	height: 30px;
+	text-align: center;
+	display:none;
+}
+
+#t_fons div {
+	display: inline-block;
+	height: 100%;
+	width: 30px;
+}
+.div_estil_1 {
+	background: rgba(208, 208, 208, 0.5) url("/pintamaps/patterns/neu.png") no-repeat;
+	cursor: pointer;
+}
+.div_estil_2 {
+	background: rgba(208, 208, 208, 0.5) url("/pintamaps/patterns/plata.png") no-repeat;
+	cursor: pointer;
+}
+
+.div_estil_3 {
+	background: rgba(208, 208, 208, 0.5) url("/pintamaps/patterns/metallfosc.png") no-repeat;
+	cursor: pointer;
+}
+
+.div_estil_4 {
+	background: rgba(208, 208, 208, 0.5) url("/pintamaps/patterns/papervell.png") no-repeat;
+	cursor: pointer;
+}
+.div_estil_5 {
+	background: rgba(208, 208, 208, 0.5) url("/pintamaps/patterns/green.png") no-repeat;
+	cursor: pointer;
+}
+
+.div_estil_6 {
+	background: rgba(208, 208, 208, 0.5) url("/pintamaps/patterns/blaucel.png") no-repeat;
+	cursor: pointer;
+}
+.cap_ll{
+
+	width: 100%;
+
+}
+
+#ul_topomap li a{
+
+	font-weight: bold;
+
+}
+
+#ul_estilmap li a{
+
+	font-weight: bold;
+
+}
+
+button:active{
+
+	color:green;
+}
+
+#bt_close, #bt_pin{
+	float:right;
+	cursor:pointer;
+	padding: 5px;
+	z-index: 100;
+}
+
+.red{
+		color:red;
+}
+
+#text_vector{
+	padding: 15px;
+	    overflow-x: hidden;
+	    overflow-y: auto;
+	    width: auto;
+	    height: 100%;
+			float: left;
+    position: absolute;
+}
+#info_vector{
+	background-color: #ffffff;
+	border-radius: 0px;
+	bottom: 40px;
+	display: none;
+	font-size: 90%;
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	opacity: 0.85;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	width: 325px;
+	height: 125px;
+	position: absolute;
+	right: 35%;
+	-webkit-box-shadow: 0 5px 4px 0 #3B3B3B;
+	-moz-box-shadow: 0 1px 4px 0 #3B3B3B;
+	box-shadow: 0 1px 4px 0 #000000;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.mapboxgl-ctrl-attrib a {
+    color: #1f436b !important;
+    font-size: 90% !important;
+    text-decoration: underline !important;
+}
